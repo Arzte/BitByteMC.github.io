@@ -1,0 +1,45 @@
+* {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    background: white;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.7em;
+    margin: 1em 0 0;
+    color: #333;
+}
+
+header {
+    color: white;
+    background: url('http://i.imgur.com/rlM9hmq.png') no-repeat;
+    background-size: cover;
+}
+
+.container {
+    max-width: 868px;
+    margin: 0 auto;
+}
+
+header .hero {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0 0 100px 0;
+	}
+	
+header .hero h1 {
+    color: white;
+    margin: 0;
+    padding-top: 2em;
+    font-size: 42px;
+    font-weight: 300;
+}
