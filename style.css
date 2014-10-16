@@ -43,6 +43,14 @@ border-bottom: 2px solid #FF0000;
 border-bottom: 2px solid #00FF00;
 }
 
-div.home-menu.pure-menu.pure-menu-open.pure-menu-horizontal.pure-menu-fixed a:hover{
+div.home-menu a:hover{
 background-color: #222222;
+}
+
+body { 
+    position:fixed;
+    background-image: url('http://i.imgur.com/YVJnVXT.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+	background-size: cover;
 }
