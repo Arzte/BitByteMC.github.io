@@ -74,7 +74,7 @@ background-color: #222222;
 }
 
 body { 
-    background-image: url('http://i.imgur.com/YVJnVXT.jpg');
+    background-image: url('background.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
 	-webkit-background-size: cover;
