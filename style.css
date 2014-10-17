@@ -34,6 +34,7 @@ vertical-align: middle;
 .pure-menu.pure-menu-open.pure-menu-fixed {
 border: 3px;
 border-bottom: 2px solid #00C2FF;
+box-shadow: 0px 0px 15px #FFFFFF;
 }
 .projects a:hover {
 -webkit-animation: projects 1s;
@@ -109,7 +110,7 @@ width:1250px;
 margin: 0 auto;
 margin-bottom:20px;
 height: 400px;
-background-color: #DDDDDD;
+background-color: #F5F5F5;
 }
 
 .projects-subject{
@@ -121,8 +122,25 @@ width: 1080px;
 font-size: 2em;
 padding: 10px;
 margin-top: 10px;
-background-color: #CCCCCC;
+background-color: #0099FF;
+color: #FFFFFF;
 box-shadow: 0px 0px 1.5px #333333;
+}
+
+.projects-paragraph {
+position: absolute;
+left: 150px;
+top: 65px;
+margin-left: 10px;
+padding: 10px;
+width: 1080px;
+height: 200px;
+margin-top: 10px;
+margin-bottom: 10px;
+background: #FFFFFF;
+box-shadow: 0px 0px 1.5px #333333;
+font-size: 18px;
+text-align: center;
 }
 
 .user-logo{
@@ -139,7 +157,7 @@ width:1250px;
 margin: 0 auto;
 margin-bottom:20px;
 height: 200px;
-background-color: #DDDDDD;
+background-color: #F5F5F5;
 }
 
 .user-name{
