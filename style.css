@@ -9,7 +9,7 @@ background: #000000;
 }
 
 a:hover{
-border-bottom: 2px solid #00FF00;
+!border-bottom: 2px solid #00FF00;
 }
 
 .home-menu .pure-menu-heading {
@@ -40,18 +40,21 @@ box-shadow: 0px 0px 15px #FFFFFF;
 -webkit-animation: projects 1s;
 animation: projects 1s;
 -webkit-animation-fill-mode: both;
+animation-fill-mode: both;
 }
 
 .about a:hover {
 -webkit-animation: about 1s;
 animation: about 1s;
 -webkit-animation-fill-mode: both;
+animation-fill-mode: both;
 }
 
 .github a:hover {
 -webkit-animation: github 1s;
 animation: github 1s;
 -webkit-animation-fill-mode: both;
+animation-fill-mode: both;
 }
 
 .place a:hover {
@@ -81,21 +84,39 @@ body {
     font-size: 2.5em;
     width: 1000px;
 	position: relative;
-	top: 60px;
+	top: -30px;
     margin: 0 auto;
     padding: 0;
     text-align: center;
-    color: #FFFFFF;
+    color: #0099FF;
+}
+
+.border{
+	border: 1.5px solid #0099FF;
+	width: 1000px;
+	position: relative;
+	top: 100px;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin: 0 auto;
+	height: 220px;
+	padding: 10px;
+	margin-bottom: 50px;
+	border-radius: 10px;
+}
+
+.border:hover{
+border: 1.5px solid #00FF00;
 }
 
 .subtext{
     width: 1000px;
 	position: relative;
-	top: 10px;
+	top: -90px;
 	margin: 0 auto;
 	padding: 0;
 	text-align: center;
-	color: #FFFFFF;
+	color: #0099FF;
 	font-size:35px;
 	font-weight: light;
 }
@@ -109,11 +130,11 @@ top: 100px;
 width:1250px;
 margin: 0 auto;
 margin-bottom:20px;
-height: 400px;
+height: 200px;
 background-color: #F5F5F5;
 }
 
-.projects-subject{
+.subject{
 position: absolute;
 top: 0px;
 left: 150px;
@@ -127,14 +148,13 @@ color: #FFFFFF;
 box-shadow: 0px 0px 1.5px #333333;
 }
 
-.projects-paragraph {
+.paragraph {
 position: absolute;
 left: 150px;
 top: 65px;
 margin-left: 10px;
-padding: 10px;
+padding: 5px;
 width: 1080px;
-height: 200px;
 margin-top: 10px;
 margin-bottom: 10px;
 background: #FFFFFF;
@@ -180,6 +200,31 @@ border-radius:5px;
 
 .img-shadow:hover{
 opacity: 0.7;
+border: 1.5px solid #0099FF;
+}
+
+.footer{
+background-color: #000000;
+position: relative;
+top: 100px;
+border-top: 2px solid #0099FF;
+height: 105px;
+bottom: 0px;
+box-shadow: 0px 0px 15px #FFFFFF;
+color: #FFFFFF;
+}
+
+.git-mark{
+height: 100px;
+width: 100px;
+padding: 10px;
+}
+
+.git-logo{
+position: relative;
+height: 100px;
+width: 244px;
+left: -15px;
 }
 
 @-webkit-keyframes projects {
@@ -193,6 +238,21 @@ to {border: 2px solid #00FF00;}
 }
 
 @-webkit-keyframes github {
+from {border: 2px solid #222222;}
+to {border: 2px solid #FFFF00;}
+}
+
+@keyframes projects {
+from {border: 2px solid #222222;}
+to {border: 2px solid #FF0000;}
+}
+
+@keyframes about {
+from {border: 2px solid #222222;}
+to {border: 2px solid #00FF00;}
+}
+
+@keyframes github {
 from {border: 2px solid #222222;}
 to {border: 2px solid #FFFF00;}
 }
