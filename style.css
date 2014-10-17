@@ -65,9 +65,9 @@ background-color: #222222;
 
 body { 
     background-image: url('http://i.imgur.com/YVJnVXT.jpg');
-    !background-repeat: no-repeat;
-    background-attachment: scroll;
-	background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	-webkit-background-size: cover;
 }
 
 .welcome{
@@ -91,4 +91,16 @@ body {
 	color: #FFFFFF;
 	font-size:35px;
 	font-weight: light;
+}
+
+.projects-section{
+border-top: 3.5px solid #0099FF;
+position: relative;
+top: 100px;
+margin-left: 20px;
+margin-right: 20px;
+margin-bottom:20px;
+height: 200px;
+background-color: #FFFFFF;
+!padding: 100px;
 }
