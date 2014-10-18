@@ -111,8 +111,8 @@ border: 1.5px solid #00FF00;
 
 .projects-section{
 box-shadow: 5px 7px 5px #000000;
-border-top: 2.5px solid #FF0000;
-border-bottom: 2.5px solid #FF0000;
+border-top: 3.5px solid #e74c3c;
+border-bottom: 3.5px solid #e74c3c;
 position: relative;
 top: 100px;
 width:1250px;
@@ -157,8 +157,8 @@ padding: 10px;
 
 .about-section{
 box-shadow: 5px 7px 5px #000000;
-border-top: 2.5px solid #00FF00;
-border-bottom: 2.5px solid #00FF00;
+border-top: 3.5px solid #2ecc71;
+border-bottom: 3.5px solid #2ecc71;
 position: relative;
 top: 100px;
 width:1250px;
@@ -192,8 +192,8 @@ opacity: 0.7;
 
 .github-section{
 box-shadow: 5px 7px 5px #000000;
-border-top: 2.5px solid #0000FF;
-border-bottom: 2.5px solid #0000FF;
+border-top: 3.5px solid #2980b9;
+border-bottom: 3.5px solid #2980b9;
 position: relative;
 top: 100px;
 width:1250px;
@@ -229,30 +229,30 @@ left: -15px;
 
 @-webkit-keyframes projects {
 from {border: 2px solid #222222;}
-to {border: 2px solid #FF0000;}
+to {border: 2px solid #e74c3c;}
 }
 
 @-webkit-keyframes about {
 from {border: 2px solid #222222;}
-to {border: 2px solid #00FF00;}
+to {border: 2px solid #2ecc71;}
 }
 
 @-webkit-keyframes github {
 from {border: 2px solid #222222;}
-to {border: 2px solid #0000FF;}
+to {border: 2px solid #2980b9;}
 }
 
 @keyframes projects {
 from {border: 2px solid #222222;}
-to {border: 2px solid #FF0000;}
+to {border: 2px solid #e74c3c;}
 }
 
 @keyframes about {
 from {border: 2px solid #222222;}
-to {border: 2px solid #00FF00;}
+to {border: 2px solid #2ecc71;}
 }
 
 @keyframes github {
 from {border: 2px solid #222222;}
-to {border: 2px solid #0000FF;}
+to {border: 2px solid #2980b9;}
 }
