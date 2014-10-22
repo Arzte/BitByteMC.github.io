@@ -3,15 +3,12 @@
     -webkit-font-smoothing: antialiased;
     box-sizing: border-box;
 }
-
 .home-menu.pure-menu-open {
 background: #000000;
 }
-
 a:hover{
 !border-bottom: 2px solid #00FF00;
 }
-
 .home-menu .pure-menu-heading {
 color: #0099FF;
 font-weight: 400;
@@ -19,18 +16,15 @@ font-size: 120%;
 border:10px;
 border-bottom: #0099FF;
 }
-
 .home-menu a {
 color: #0099FF;
 text-align:left;
 }
-
 .pure-menu.pure-menu-horizontal>.pure-menu-heading {
 display: inline-block;
 margin: 5px;
 vertical-align: middle;
 }
-
 .pure-menu.pure-menu-open.pure-menu-fixed {
 border: 3px;
 border-bottom: 2px solid #00C2FF;
@@ -42,32 +36,27 @@ animation: projects 1s;
 -webkit-animation-fill-mode: both;
 animation-fill-mode: both;
 }
-
 .about a:hover {
 -webkit-animation: about 1s;
 animation: about 1s;
 -webkit-animation-fill-mode: both;
 animation-fill-mode: both;
 }
-
 .github a:hover {
 -webkit-animation: github 1s;
 animation: github 1s;
 -webkit-animation-fill-mode: both;
 animation-fill-mode: both;
 }
-
 div.home-menu a:hover{
 background-color: #222222;
 }
-
-body { 
+body {
     background-image: url('background.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
 	-webkit-background-size: cover;
 }
-
 .welcome{
     font-size: 2.5em;
     width: 1000px;
@@ -78,7 +67,6 @@ body {
     text-align: center;
     color: #0099FF;
 }
-
 .border{
 	border: 1.5px solid #0099FF;
 	width: 1000px;
@@ -92,11 +80,9 @@ body {
 	margin-bottom: 50px;
 	border-radius: 10px;
 }
-
 .border:hover{
 border: 1.5px solid #00FF00;
 }
-
 .subtext{
     width: 1000px;
 	position: relative;
@@ -108,7 +94,6 @@ border: 1.5px solid #00FF00;
 	font-size:35px;
 	font-weight: light;
 }
-
 .projects-section{
 box-shadow: 5px 7px 5px #000000;
 border-top: 3.5px solid #e74c3c;
@@ -118,10 +103,9 @@ top: 100px;
 width:1250px;
 margin: 0 auto;
 margin-bottom:20px;
-height: 200px;
+height: 480px;
 background-color: #F5F5F5;
 }
-
 .subject{
 position: absolute;
 top: 0px;
@@ -135,7 +119,19 @@ background-color: #0099FF;
 color: #FFFFFF;
 box-shadow: 0px 0px 1.5px #333333;
 }
-
+.subject2{
+position: relative;
+top: -10px;
+left: auto;
+margin-left: 10px;
+margin-right: 10px;
+width: auto;
+font-size: 2em;
+padding: 10px;
+background-color: #0099FF;
+color: #FFFFFF;
+box-shadow: 0px 0px 1.5px #333333;
+}
 .paragraph {
 position: absolute;
 left: 150px;
@@ -150,11 +146,9 @@ box-shadow: 0px 0px 1.5px #333333;
 font-size: 18px;
 text-align: center;
 }
-
 .user-logo{
 padding: 10px;
 }
-
 .about-section{
 box-shadow: 5px 7px 5px #000000;
 border-top: 3.5px solid #2ecc71;
@@ -164,10 +158,9 @@ top: 100px;
 width:1250px;
 margin: 0 auto;
 margin-bottom:20px;
-height: 200px;
+height: 280px;
 background-color: #F5F5F5;
 }
-
 .user-name{
 position: absolute;
 top: 160px;
@@ -180,16 +173,13 @@ color: #FFFFFF;
 box-shadow: 0px 0px 5px #333333;
 border-radius: 5px;
 }
-
 .img-shadow{
 box-shadow: 0px 0px 10px #000000;
 border-radius:5px;
 }
-
 .img-shadow:hover{
 opacity: 0.7;
 }
-
 .github-section{
 box-shadow: 5px 7px 5px #000000;
 border-top: 3.5px solid #2980b9;
@@ -202,7 +192,6 @@ margin-bottom:20px;
 height: 200px;
 background-color: #F5F5F5;
 }
-
 .footer{
 background-color: #000000;
 position: relative;
@@ -213,20 +202,42 @@ bottom: 0px;
 box-shadow: 0px 0px 15px #FFFFFF;
 color: #FFFFFF;
 }
-
 .git-mark{
 height: 100px;
 width: 100px;
 padding: 10px;
 }
-
 .git-logo{
 position: relative;
 height: 100px;
 width: 244px;
 left: -15px;
 }
-
+.links{
+font-style: none;
+}
+.table-arrangement{
+position: absolute;
+margin: 0 auto;
+width: 1230px;
+top: 65.5px;
+margin-left: 10px;
+margin-right: 10px;
+}
+.checkout{
+  border-radius: 4px;
+}
+.checkout:hover{
+  background-color: #777777;
+}
+.projects-table{
+table-layout: fixed;
+}
+.text-position{
+position: relative;
+text-align: center;
+top: -10px;
+}
 @-webkit-keyframes projects {
 from {border: 2px solid #222222;}
 to {border: 2px solid #e74c3c;}
