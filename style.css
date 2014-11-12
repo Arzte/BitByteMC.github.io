@@ -1,269 +1,118 @@
-* {
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    box-sizing: border-box;
+*{
+-webkit-font-smoothing: antialiased;
+box-sizing: border-box;
 }
-.home-menu.pure-menu-open {
-background: #000000;
+@font-face {
+    font-family: typograph_pro;
+    src: local(typograph_pro), url('fonts/typograph.ttf') format('opentype');
 }
-a:hover{
-!border-bottom: 2px solid #00FF00;
+.byte-hotbar{
+background-color: #302F2F !important;
+box-shadow: 0px 0px 1px #000000;
+z-index: 3 !important;
 }
-.home-menu .pure-menu-heading {
-color: #0099FF;
-font-weight: 400;
-font-size: 120%;
-border:10px;
-border-bottom: #0099FF;
-}
-.home-menu a {
-color: #0099FF;
-text-align:left;
-}
-.pure-menu.pure-menu-horizontal>.pure-menu-heading {
-display: inline-block;
-margin: 5px;
-vertical-align: middle;
-}
-.pure-menu.pure-menu-open.pure-menu-fixed {
-border: 3px;
-border-bottom: 2px solid #00C2FF;
-box-shadow: 0px 0px 15px #FFFFFF;
-}
-.projects a:hover {
--webkit-animation: projects 1s;
-animation: projects 1s;
--webkit-animation-fill-mode: both;
-animation-fill-mode: both;
-}
-.about a:hover {
--webkit-animation: about 1s;
-animation: about 1s;
--webkit-animation-fill-mode: both;
-animation-fill-mode: both;
-}
-.github a:hover {
--webkit-animation: github 1s;
-animation: github 1s;
--webkit-animation-fill-mode: both;
-animation-fill-mode: both;
-}
-div.home-menu a:hover{
-background-color: #222222;
-}
-body {
-    background-image: url('background.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-	-webkit-background-size: cover;
-}
-.welcome{
-    font-size: 2.5em;
-    width: 1000px;
-	position: relative;
-	top: -30px;
-    margin: 0 auto;
-    padding: 0;
-    text-align: center;
-    color: #0099FF;
-}
-.border{
-	border: 1.5px solid #0099FF;
-	width: 1000px;
-	position: relative;
-	top: 100px;
-	margin-left: 50px;
-	margin-right: 50px;
-	margin: 0 auto;
-	height: 220px;
-	padding: 10px;
-	margin-bottom: 50px;
-	border-radius: 10px;
-}
-.border:hover{
-border: 1.5px solid #00FF00;
-}
-.subtext{
-    width: 1000px;
-	position: relative;
-	top: -90px;
-	margin: 0 auto;
-	padding: 0;
-	text-align: center;
-	color: #0099FF;
-	font-size:35px;
-	font-weight: light;
-}
-.projects-section{
-box-shadow: 5px 7px 5px #000000;
-border-top: 3.5px solid #e74c3c;
-border-bottom: 3.5px solid #e74c3c;
-position: relative;
-top: 100px;
-width:1250px;
-margin: 0 auto;
-margin-bottom:20px;
-height: 480px;
-background-color: #F5F5F5;
-}
-.subject{
-position: absolute;
-top: 0px;
-left: 150px;
-margin-left: 10px;
-width: 1080px;
-font-size: 2em;
-padding: 10px;
-margin-top: 10px;
-background-color: #0099FF;
-color: #FFFFFF;
-box-shadow: 0px 0px 1.5px #333333;
-}
-.subject2{
-position: relative;
-top: -10px;
-left: auto;
-margin-left: 10px;
-margin-right: 10px;
-width: auto;
-font-size: 2em;
-padding: 10px;
-background-color: #0099FF;
-color: #FFFFFF;
-box-shadow: 0px 0px 1.5px #333333;
-}
-.paragraph {
-position: absolute;
-left: 150px;
-top: 65px;
-margin-left: 10px;
-padding: 5px;
-width: 1080px;
-margin-top: 10px;
-margin-bottom: 10px;
-background: #FFFFFF;
-box-shadow: 0px 0px 1.5px #333333;
-font-size: 18px;
-text-align: center;
-}
-.user-logo{
-padding: 10px;
-}
-.about-section{
-box-shadow: 5px 7px 5px #000000;
-border-top: 3.5px solid #2ecc71;
-border-bottom: 3.5px solid #2ecc71;
-position: relative;
-top: 100px;
-width:1250px;
-margin: 0 auto;
-margin-bottom:20px;
-height: 280px;
-background-color: #F5F5F5;
-}
-.user-name{
-position: absolute;
-top: 160px;
+.byte-logo{
+position:absolute;
+top: -5px;
 left: 10px;
-font-size: 20px;
-background-color: #0099FF;
-width: 140px;
-text-align: center;
+border-radius: 3px;
+z-index: -1;
+size: 2;
+}
+.pure-menu a{
 color: #FFFFFF;
-box-shadow: 0px 0px 5px #333333;
-border-radius: 5px;
 }
-.img-shadow{
-box-shadow: 0px 0px 10px #000000;
-border-radius:5px;
+.pure-menu li a:hover{
+background-color: #BBBBBB;
 }
-.img-shadow:hover{
-opacity: 0.7;
-}
-.github-section{
-box-shadow: 5px 7px 5px #000000;
-border-top: 3.5px solid #2980b9;
-border-bottom: 3.5px solid #2980b9;
+.byte-landing-image{
 position: relative;
-top: 100px;
-width:1250px;
-margin: 0 auto;
-margin-bottom:20px;
-height: 200px;
-background-color: #F5F5F5;
+z-index: -2;
+background-image: url(landing.svg);
+height: 185px;
+width: auto;
+background-repeat: no-repeat;
+background-attachment: fixed;
+-webkit-background-size: cover;
+}
+.byte-team-landing-image{
+position: relative;
+z-index: -2;
+background-image: url(team.svg);
+height: 185px;
+width: auto;
+background-repeat: no-repeat;
+background-attachment: fixed;
+-webkit-background-size: cover;
+}
+.byte-products-landing-image{
+position: relative;
+z-index: -2;
+background-image: url(products.svg);
+height: 185px;
+width: auto;
+background-repeat: no-repeat;
+background-attachment: fixed;
+-webkit-background-size: cover;
+}
+.bytelab-welcome{
+text-align: center;
+position: relative;
+top: 60px;
+background: rgba(0, 0, 0, 0.3);
+color: #FFFFFF;
+padding-top: 10px;
+padding-bottom: 10px;
+font-size: 45px;
+margin-left: 10px;
+font-family: typograph_pro;
+}
+.index-header{
+border-top: 1px solid #e5e5e5;
+background-color: #f5f5f5;
+border-bottom: 1px solid #e5e5e5;
+top: 35px;
+font-family: typograph_pro;
+text-align: center;
+padding: 10px;
+font-size: 20px;
+}
+body{
+background-color: #111111;
 }
 .footer{
-background-color: #000000;
-position: relative;
-top: 100px;
-border-top: 2px solid #0099FF;
-height: 105px;
-bottom: 0px;
-box-shadow: 0px 0px 15px #FFFFFF;
-color: #FFFFFF;
+background: #111111;
+color: rgba(255, 255, 255, 0.5);
+position: absolute;
+width: 100%;
+margin-bottom: 0px;
+border-bottom: 1px solid #302F2F;
 }
-.git-mark{
-height: 100px;
-width: 100px;
+.l-box {
+padding: 1em;
+}
+.pure-menu.pure-menu-open.pure-menu-fixed{
+border-style: none;
+}
+.index-box{
+background-color: #f5f5f5;
+position: relative;
+margin: 10px auto;
+font-family: typograph_pro;
+text-align: center;
+padding: 10px;
+width: 1000px;
+box-shadow: 0px 0px 1px #000000;
+border-radius: 3px;
+}
+.index-container{
+background-color: #302F2F;
+width: 100%;
 padding: 10px;
 }
-.git-logo{
-position: relative;
-height: 100px;
-width: 244px;
-left: -15px;
+.pure-menu .pure-menu-selected a{
+color: #0099FF !important;
 }
-.links{
-font-style: none;
-}
-.table-arrangement{
-position: absolute;
-margin: 0 auto;
-width: 1230px;
-top: 65.5px;
-margin-left: 10px;
-margin-right: 10px;
-}
-.checkout{
-  border-radius: 4px;
-}
-.checkout:hover{
-  background-color: #777777;
-}
-.projects-table{
-table-layout: fixed;
-}
-.text-position{
-position: relative;
-text-align: center;
-top: -10px;
-}
-@-webkit-keyframes projects {
-from {border: 2px solid #222222;}
-to {border: 2px solid #e74c3c;}
-}
-
-@-webkit-keyframes about {
-from {border: 2px solid #222222;}
-to {border: 2px solid #2ecc71;}
-}
-
-@-webkit-keyframes github {
-from {border: 2px solid #222222;}
-to {border: 2px solid #2980b9;}
-}
-
-@keyframes projects {
-from {border: 2px solid #222222;}
-to {border: 2px solid #e74c3c;}
-}
-
-@keyframes about {
-from {border: 2px solid #222222;}
-to {border: 2px solid #2ecc71;}
-}
-
-@keyframes github {
-from {border: 2px solid #222222;}
-to {border: 2px solid #2980b9;}
+.link-style{
+text-decoration: none;
 }
