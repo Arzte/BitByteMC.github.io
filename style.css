@@ -116,3 +116,16 @@ color: #0099FF !important;
 .link-style{
 text-decoration: none;
 }
+.label {
+text-align: center;
+}
+.pure-form {
+margin: 0 auto; 
+width:225px;
+}
+button.pure-button {
+    background-color: #d8e0ba;
+}
+form.pure-form.pure-form-stacked.is-center fieldset label {
+    margin-right: 20px;
+}
