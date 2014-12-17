@@ -13,7 +13,7 @@ z-index: 3 !important;
 }
 .byte-logo{
 position:absolute;
-top: -5px;
+top: 6px;
 left: 10px;
 border-radius: 3px;
 z-index: -1;
@@ -58,7 +58,7 @@ background-attachment: fixed;
 .bytelab-welcome{
 text-align: center;
 position: relative;
-top: 60px;
+top: 71px;
 background: rgba(0, 0, 0, 0.3);
 color: #FFFFFF;
 padding-top: 10px;
