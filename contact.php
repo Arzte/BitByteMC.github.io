@@ -1,10 +1,36 @@
+<?php
+    function mail_sent_correctly() {
+        if (!isset($_POST["name"]) || !isset($_POST["email"]) || !isset($_POST["content"])) {
+            return false;
+        }
+        $name = $_POST["name"];
+        $email = $_POST["email"];
+        $message = $_POST["content"];
+        if ($name == "") {
+            return false;
+        }
+        if ($email == "") {
+            return false;
+        }
+        if (strlen($message) < 32) {
+            return false;
+        }
+        $to = "contact@bytelab.pw";
+        $subject = substr($message, 0, 32) . "...";
+        $body = "From: $name<br/>Reply: $email<br/><br/>$message";
+        $headers = "From: $name <$email>" . "\r\n";
+        $headers .= "Reply-To: $email" . "\r\n";
+        $headers .= "Content-type: text/html; charset=UTF-8" . "\r\n";
+        return @mail($to, $subject, $body, $headers) ? true : false;
+    }
+?>
 <!DOCTYPE HTML>
 <html>
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Byte Lab Innovations</title>
-    <link rel="stylesheet" href="pure.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
     <link rel="icon" href="logo.ico" type="image/x-icon">
@@ -57,33 +83,48 @@
     </div>
     <div class="byte-team-landing-image">
         <div class="bytelab-welcome">
-            The Team
+            Contact us
         </div>
     </div>
   </head>
   <body>
     <div class="index-header">
-    Meet The team
+    Contact us
     </div>
-      
-    <div class="index-container">
+        <div class="index-container">
+            <div class="index-box">
+                <div class="ribbon l-box-lrg">
+                    <h2 class="content-head content-head-ribbon is-center">Need to get ahold of us?</h2>
+                        <p class="is-center"><i>That's alright, because we like hearing from you! Go ahead and fill out the form
+                            below, or <a href="mailto:contact@bytelab.pw">email us</a>!</i></p>
 
-                <img class="image" id="bitbyte" src="https://forums.spongepowered.org/user_avatar/forums.spongepowered.org/bitbyte/128/1199.png" width="128">
-                <img class="image" src="https://forums.spongepowered.org/user_avatar/forums.spongepowered.org/tbotv63/128/1199.png" width="128">
-                <img class="image" src="https://forums.spongepowered.org/user_avatar/forums.spongepowered.org/the_doctors_life/128/1199.png" width="128">
-                <img class="image" src="https://forums.spongepowered.org/user_avatar/forums.spongepowered.org/gundershot/128/1199.png" width="128">
-                <img class="image" src="question.jpg" width="128" height="128">
-                <img class="image" src="question.jpg" width="128" height="128">
-                <img class="image" src="question.jpg" width="128" height="128">
-                <img class="image" src="question.jpg" width="128" height="128">
-                <img class="image" src="question.jpg" width="128" height="128">
-       
+                        <form class="pure-form pure-form-stacked is-center" action="contact.php" method="post">
+                            <fieldset>
+                                <label for="name">Your Name</label>
+                                <input name="name" type="text" placeholder="Your Name">
+
+                                <label for="email">Your Email</label>
+                                <input name="email" type="email" placeholder="Your Email">
+
+                                <label for="content">Your Message</label>
+                                <textarea name="content" placeholder="Your Message"></textarea>
+                            </fieldset>
+                                <button name="submit" type="submit" class="pure-button">Contact Us!</button>
+                                    <?php
+                                        if (isset($_POST['submit'])) {
+                                            echo "<p class=\"email-notice\">";
+                                            if (mail_sent_correctly()) {
+                                                echo "Your message was sent!";
+                                            } else {
+                                                echo "There was an error, please try again.";
+                                            }
+                                            echo "</p>";
+                                        }
+                                    ?>
+                        </form>
                 </div>
             </div>
         </div>
     </div>
   </body>
-  <footer>
-    <div class="footer l-box">Site and Content © 2014 BitByte and Contributors.</div>
-  <footer>
 </html>

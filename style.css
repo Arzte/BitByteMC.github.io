@@ -115,6 +115,7 @@ color: #0099FF !important;
 .link-style{
 text-decoration: none;
 }
+
 .image{
 position: relative;
 left: 6px;
@@ -128,4 +129,21 @@ background-color: #95a5a6;
 .image:hover{
 background-color: black;
 opacity: 0.5;
+}
+.label {
+text-align: center;
+}
+.pure-form {
+margin: 0 auto; 
+width:225px;
+}
+button.pure-button {
+    background-color: #d8e0ba;
+}
+form.pure-form.pure-form-stacked.is-center fieldset label {
+    margin-right: 20px;
+}
+form.pure-form.pure-form-stacked.is-center fieldset textarea {
+    width: 220px;
+    height: 80px;
 }
