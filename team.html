@@ -11,11 +11,19 @@
       </style>
       <script src="assets/js/jquery.min.js"></script>
       <script src="assets/js/jquery-ui.min.js"></script>
-      <script>
-         $(function() {
-             $( "#team-accordion" ).accordion();
-         });
-      </script>
+       <script src='assets/js/scroll'></script>
+       		<script>
+                
+			smoothScroll.init({
+				speed: 2000,
+				easing: 'easeInOutCubic',
+				offset: 40,
+				updateURL: true,
+				callbackBefore: function ( toggle, anchor ) {},
+				callbackAfter: function ( toggle, anchor ) {}
+			});
+		</script>
+       
       <link rel="shortcut icon" href="logo.ico" type="image/x-icon" />
       <link rel="icon" href="logo.ico" type="image/x-icon" />
       <img class="byte-logo" src="assets/img/logo.svg" alt="Logo">
@@ -39,7 +47,7 @@
          Meet The team
       </div>
       <div class="index-container" align="center">
-         <a class="href" href="user/bitbyte.html"><img class="image" src="https://forums.spongepowered.org/user_avatar/forums.spongepowered.org/bitbyte/128/1199.png" width="128"></a>
+         <a data-scroll href="#bitbyte"><img class="image" src="https://forums.spongepowered.org/user_avatar/forums.spongepowered.org/bitbyte/128/1199.png" width="128"></a>
          <img class="image" src="https://forums.spongepowered.org/user_avatar/forums.spongepowered.org/tbotv63/128/1199.png" width="128"/>
          <img class="image" src="https://forums.spongepowered.org/user_avatar/forums.spongepowered.org/the_doctors_life/128/1199.png" width="128"/>
          <img class="image" src="https://forums.spongepowered.org/user_avatar/forums.spongepowered.org/gundershot/128/1199.png" width="128"/>
@@ -48,47 +56,29 @@
          <img class="image" src="assets/img/question.jpg" width="128" height="128"/>
          <img class="image" src="assets/img/question.jpg" width="128" height="128"/>
       </div>
-      <div id="team-accordion" class="lower-info">
-         <h3 style="margin: 0;">
+      <div class="lower-info">
             <div class="member">
                <img src="https://forums.spongepowered.org/user_avatar/forums.spongepowered.org/bitbyte/128/1199.png" height="64" width="64" />
                <span class="info-text">BitByte - Organization Owner &amp; Lead Dev</span>
             </div>
-         </h3>
-         <div class="accordion-text">
-             <span class="test">Description </span>
-         </div>
-         <h3 display="inline" style="margin: 0;">
             <div class="member">
                <img src="https://forums.spongepowered.org/user_avatar/forums.spongepowered.org/tbotv63/128/1199.png" height="64" width="64" />
                <span class="info-text">TBot - Developer &amp; Co-Author of Wormholes</span>
             </div>
-         </h3>
-         <div class="accordion-text">
-            Description
-         </div>
-         <h3 display="inline" style="margin: 0;">
             <div class="member">
                <img src="https://forums.spongepowered.org/user_avatar/forums.spongepowered.org/the_doctors_life/128/1199.png" height="64" width="64" />
                <span class="info-text">The_Doctors_Life - Web Developer</span>
             </div>
-         </h3>
-         <div class="accordion-text">
-            Description
-         </div>
-         <h3 display="inline" style="margin: 0;">
             <div class="member">
                <img src="https://forums.spongepowered.org/user_avatar/forums.spongepowered.org/gundershot/128/1199.png" height="64" width="64" />
                <span class="info-text">Gundershot - Developer</span>
             </div>
-         </h3>
-         <div class="accordion-text">
-            Description
-         </div>
       </div>
-      </div>
-      </div>
-      </div>
+       <div class="user-profiles">
+       <div class="profile" id="bitbyte">
+           <img style="border-radius:7px;" src="https://forums.spongepowered.org/user_avatar/forums.spongepowered.org/bitbyte/128/1199.png" height="128" width="128" />
+           </div>
+       </div>
    </body>
    <footer>
    <div class="footer l-box">Site and Content © 2014 BitByte and Contributors.</div>

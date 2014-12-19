@@ -147,8 +147,7 @@ form.pure-form.pure-form-stacked.is-center fieldset textarea {
 }
 .lower-info{
 background-color: #ecf0f1;
-height: 550px;
-padding: 5px;
+padding: 6px 6px 1px 6px;
 }
 .member{
 background-color: #302F2F;
@@ -169,23 +168,24 @@ font-family: typograph_pro;
 font-size: 16px;
 }
 .member:hover{
-background-color: #7f8c8d
+background-color: #7f8c8d;
 }
 .href{
 text-decoration: none;
 }
-
-.accordion-text {
-    position: relative;
-    background-color: #BFBFBF;
-    top: -15px;
-    margin-bottom:-5px;
-    padding-top: 10px;
-    border-radius: 7px;
+.user-profiles{
+background-color: #302F2F;
+position: relative;
+height: 1280px;
 }
-.test{
-    position: relative;
-    margin-left: 10px;
-    font-family: typograph_pro;
-    margin-bottom: 10px;
+.profile{
+margin-left: 5px;
+margin-right: 5px;
+position: relative;
+top: 5px;
+background-color: #bdc3c7;
+border-radius: 7px;
+padding: 10px;
+font-family: typograph_pro;
+font-size: 22px;
 }
