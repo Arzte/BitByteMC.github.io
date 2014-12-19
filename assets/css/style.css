@@ -1,11 +1,10 @@
+@import url(/assets/css/font.css);
+
 *{
 -webkit-font-smoothing: antialiased;
 box-sizing: border-box;
 }
-@font-face {
-    font-family: typograph_pro;
-    src: local(typograph_pro), url('fonts/typograph.ttf') format('opentype');
-}
+
 .byte-hotbar{
 background-color: #302F2F !important;
 box-shadow: 0px 0px 1px #000000;
@@ -28,7 +27,7 @@ background-color: #BBBBBB;
 .byte-landing-image{
 position: relative;
 z-index: -2;
-background-image: url(landing.svg);
+background-image: url(/assets/img/bg/landing.svg);
 height: 185px;
 width: auto;
 background-repeat: no-repeat;
@@ -38,7 +37,7 @@ background-attachment: fixed;
 .byte-team-landing-image{
 position: relative;
 z-index: -2;
-background-image: url(team.svg);
+background-image: url(/assets/img/bg/team.svg);
 height: 185px;
 width: auto;
 background-repeat: no-repeat;
@@ -48,7 +47,7 @@ background-attachment: fixed;
 .byte-products-landing-image{
 position: relative;
 z-index: -2;
-background-image: url(products.svg);
+background-image: url(/assets/img/bg/products.svg);
 height: 185px;
 width: auto;
 background-repeat: no-repeat;
@@ -173,4 +172,12 @@ background-color: #7f8c8d
 }
 .href{
 text-decoration: none;
+}
+
+.accordion-text {
+    position: relative;
+    top: 3px;
+    color: white;
+    margin-left: 10px;
+    font-family: typograph_pro;
 }
