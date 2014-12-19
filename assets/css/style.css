@@ -148,17 +148,17 @@ form.pure-form.pure-form-stacked.is-center fieldset textarea {
 .lower-info{
 background-color: #ecf0f1;
 height: 550px;
+padding: 5px;
 }
 .member{
 background-color: #302F2F;
 border-radius: 7px;
-margin-left: 5px;
 margin-bottom: 5px;
 position: relative;
-top: 5px;
-width: 700px;
 height: 64px;
 overflow: hidden;
+border: 0px solid transparent;
+z-index: 1;
 }
 .info-text{
 color: white;
@@ -166,6 +166,7 @@ position: relative;
 top: -40%;
 margin-left: 10px;
 font-family: typograph_pro;
+font-size: 16px;
 }
 .member:hover{
 background-color: #7f8c8d
@@ -176,8 +177,15 @@ text-decoration: none;
 
 .accordion-text {
     position: relative;
-    top: 3px;
-    color: white;
+    background-color: #BFBFBF;
+    top: -15px;
+    margin-bottom:-5px;
+    padding-top: 10px;
+    border-radius: 7px;
+}
+.test{
+    position: relative;
     margin-left: 10px;
     font-family: typograph_pro;
+    margin-bottom: 10px;
 }
