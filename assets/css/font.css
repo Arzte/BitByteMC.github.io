@@ -1,0 +1,4 @@
+@font-face {
+    font-family: typograph_pro;
+    src: local(typograph_pro), url('font/typograph.ttf') format('opentype');
+}
